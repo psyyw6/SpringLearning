@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+</head>
+<body>
+<h1>Design your taco</h1>
+<img th:src=""
+<h3>Designate your warp:</h3>
+<div th:each = "ingredient : ${wrap}">
+    <input name = "ingredients" type = "checkbox", th:value = "${ingredients.id}"/>
+    <span th:text = "${ingredients.name}">INGREDIENTS</span><br/>
+</div>
+
+</body>
+</html>
